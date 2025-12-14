@@ -1,7 +1,11 @@
 {
-  "generated_at": "2025-12-14T02:03:09.568401",
+  "generated_at": "2025-12-14T05:01:25.376710",
   "parameters": {
-    "fps": 25.0,
+    "fps_config": {
+      "darkmyter": 25.0,
+      "eagle": 24.0,
+      "yolo11_botsort": 25.0
+    },
     "pixels_per_meter": 10.0,
     "agents": [
       "darkmyter",
@@ -13,6 +17,7 @@
   "aggregated_quantitative": {
     "darkmyter": {
       "clips_analyzed": 15,
+      "fps_used": 25.0,
       "total_frames": 152624,
       "total_detections": 3457412,
       "total_tracks": 11745,
@@ -89,46 +94,47 @@
     },
     "eagle": {
       "clips_analyzed": 15,
+      "fps_used": 24.0,
       "total_frames": 114375,
       "total_detections": 2357054,
       "total_tracks": 1911,
       "jerk": {
         "mean": {
-          "mean": 20903.03663144624,
-          "std": 1565.4848587241804,
-          "min": 19246.344957807767,
-          "max": 24044.17402274235,
+          "mean": 18493.66901715922,
+          "std": 1385.040811968195,
+          "min": 17027.934252591014,
+          "max": 21272.746348184974,
           "count": 15
         },
         "tracks_analyzed": 1674
       },
       "speed": {
         "mean_speed_ms": {
-          "mean": 3.270399655796756,
-          "std": 0.4918670658547551,
-          "min": 2.582954248651981,
-          "max": 4.233581921347961,
+          "mean": 3.1395836695648853,
+          "std": 0.47219238322056456,
+          "min": 2.479636078705902,
+          "max": 4.064238644494042,
           "count": 15
         },
         "max_speed_ms": {
-          "mean": 157.8800133007982,
-          "std": 460.38813487477404,
-          "min": 26.516504294495533,
-          "max": 1880.406372303604,
+          "mean": 151.5648127687663,
+          "std": 441.9726094797831,
+          "min": 25.455844122715714,
+          "max": 1805.19011741146,
           "count": 15
         },
         "violation_rate": {
-          "mean": 0.025247592935030674,
-          "std": 0.015747910379816075,
-          "min": 0.006172957355683257,
-          "max": 0.06159226324974102,
+          "mean": 0.01831783914460194,
+          "std": 0.01222332014653011,
+          "min": 0.0038183241375360356,
+          "max": 0.0478054410323083,
           "count": 15
         },
         "accel_violation_rate": {
-          "mean": 0.7948785829833286,
-          "std": 0.01845392523299912,
-          "min": 0.7544998693843223,
-          "max": 0.8179156200889199,
+          "mean": 0.7802007298206095,
+          "std": 0.01661932374719376,
+          "min": 0.743145862668765,
+          "max": 0.8011390347754839,
           "count": 15
         }
       },
@@ -165,6 +171,7 @@
     },
     "yolo11_botsort": {
       "clips_analyzed": 15,
+      "fps_used": 25.0,
       "total_frames": 152624,
       "total_detections": 2694578,
       "total_tracks": 186684,
@@ -453,6 +460,7 @@
       ],
       "quantitative": {
         "darkmyter": {
+          "fps_used": 25.0,
           "jerk": {
             "mean": 25657.02295119926,
             "std": 22842.351275526016,
@@ -485,20 +493,21 @@
           "detection_count": 160299
         },
         "eagle": {
+          "fps_used": 24.0,
           "jerk": {
-            "mean": 23169.544613432718,
-            "std": 13481.984614672163,
-            "min": 11570.089375814347,
-            "max": 158174.70463415614,
+            "mean": 20498.93022311001,
+            "std": 11927.997140046593,
+            "min": 10236.474594000481,
+            "max": 139942.85547920477,
             "count": 134
           },
           "speed": {
-            "speed_violation_rate": 0.06159226324974102,
-            "accel_violation_rate": 0.8076858836956824,
-            "mean_speed_ms": 4.233581921347961,
-            "max_speed_ms": 1880.406372303604,
-            "mean_accel_ms2": 37.2721528991053,
-            "max_accel_ms2": 46879.797572055824,
+            "speed_violation_rate": 0.0478054410323083,
+            "accel_violation_rate": 0.7926050162848315,
+            "mean_speed_ms": 4.064238644494042,
+            "max_speed_ms": 1805.19011741146,
+            "mean_accel_ms2": 34.35001611181547,
+            "max_accel_ms2": 43204.42144240666,
             "total_speed_samples": 143833,
             "total_accel_samples": 143692
           },
@@ -517,6 +526,7 @@
           "detection_count": 150017
         },
         "yolo11_botsort": {
+          "fps_used": 25.0,
           "jerk": {
             "mean": 11712.097138568806,
             "std": 9939.161741717997,
@@ -888,6 +898,7 @@
       ],
       "quantitative": {
         "darkmyter": {
+          "fps_used": 25.0,
           "jerk": {
             "mean": 25430.43545614484,
             "std": 17481.83503425151,
@@ -920,20 +931,21 @@
           "detection_count": 165583
         },
         "eagle": {
+          "fps_used": 24.0,
           "jerk": {
-            "mean": 22401.643733172914,
-            "std": 2779.5137001511175,
-            "min": 9632.777055098259,
-            "max": 29685.040304172802,
+            "mean": 19819.540669912465,
+            "std": 2459.1358330168987,
+            "min": 8522.464640619413,
+            "max": 26263.423818552623,
             "count": 77
           },
           "speed": {
-            "speed_violation_rate": 0.05344097653485049,
-            "accel_violation_rate": 0.8147945242087963,
-            "mean_speed_ms": 3.992332975523556,
-            "max_speed_ms": 37.583240945932275,
-            "mean_accel_ms2": 33.24227872196352,
-            "max_accel_ms2": 752.400300650331,
+            "speed_violation_rate": 0.04027939153545147,
+            "accel_violation_rate": 0.798045123833321,
+            "mean_speed_ms": 3.8326396565026135,
+            "max_speed_ms": 36.079911308094985,
+            "mean_accel_ms2": 30.636084070161587,
+            "max_accel_ms2": 693.4121170793451,
             "total_speed_samples": 149754,
             "total_accel_samples": 149677
           },
@@ -952,6 +964,7 @@
           "detection_count": 154215
         },
         "yolo11_botsort": {
+          "fps_used": 25.0,
           "jerk": {
             "mean": 11958.027866848219,
             "std": 9431.853528715239,
@@ -1323,6 +1336,7 @@
       ],
       "quantitative": {
         "darkmyter": {
+          "fps_used": 25.0,
           "jerk": {
             "mean": 27413.11494000391,
             "std": 24311.942239318436,
@@ -1355,20 +1369,21 @@
           "detection_count": 166119
         },
         "eagle": {
+          "fps_used": 24.0,
           "jerk": {
-            "mean": 24044.17402274235,
-            "std": 10344.806135577846,
-            "min": 7109.679344646753,
-            "max": 100185.57314486968,
+            "mean": 21272.746348184974,
+            "std": 9152.422401166601,
+            "min": 6290.189264665389,
+            "max": 88637.78324189941,
             "count": 67
           },
           "speed": {
-            "speed_violation_rate": 0.04566783247296381,
-            "accel_violation_rate": 0.8179156200889199,
-            "mean_speed_ms": 3.9907953493639994,
-            "max_speed_ms": 35.20031960082181,
-            "mean_accel_ms2": 33.947436472290576,
-            "max_accel_ms2": 641.1031670082039,
+            "speed_violation_rate": 0.03267837843280726,
+            "accel_violation_rate": 0.8011390347754839,
+            "mean_speed_ms": 3.8311635353894387,
+            "max_speed_ms": 33.79230681678894,
+            "mean_accel_ms2": 31.285957452862995,
+            "max_accel_ms2": 590.8406787147607,
             "total_speed_samples": 148967,
             "total_accel_samples": 148898
           },
@@ -1387,6 +1402,7 @@
           "detection_count": 155297
         },
         "yolo11_botsort": {
+          "fps_used": 25.0,
           "jerk": {
             "mean": 11609.12516639758,
             "std": 9794.201320314101,
@@ -1758,6 +1774,7 @@
       ],
       "quantitative": {
         "darkmyter": {
+          "fps_used": 25.0,
           "jerk": {
             "mean": 19116.586518427004,
             "std": 19023.192670219425,
@@ -1790,20 +1807,21 @@
           "detection_count": 360807
         },
         "eagle": {
+          "fps_used": 24.0,
           "jerk": {
-            "mean": 19259.42182144925,
-            "std": 6107.352428609068,
-            "min": 1179.2916523693034,
-            "max": 44825.188156789154,
+            "mean": 17039.503824621726,
+            "std": 5403.3945582778715,
+            "min": 1043.3617793506082,
+            "max": 39658.457669085015,
             "count": 196
           },
           "speed": {
-            "speed_violation_rate": 0.016613878674713384,
-            "accel_violation_rate": 0.7795396680556176,
-            "mean_speed_ms": 2.966489208702861,
-            "max_speed_ms": 34.75359693614461,
-            "mean_accel_ms2": 27.77064899600431,
-            "max_accel_ms2": 743.8399234036152,
+            "speed_violation_rate": 0.011980856121389015,
+            "accel_violation_rate": 0.7670454908016565,
+            "mean_speed_ms": 2.847829640354747,
+            "max_speed_ms": 33.36345305869883,
+            "mean_accel_ms2": 25.593430114717584,
+            "max_accel_ms2": 685.5228734087719,
             "total_speed_samples": 156917,
             "total_accel_samples": 156713
           },
@@ -1822,6 +1840,7 @@
           "detection_count": 158721
         },
         "yolo11_botsort": {
+          "fps_used": 25.0,
           "jerk": {
             "mean": 7009.494610080872,
             "std": 6282.525297284485,
@@ -2193,6 +2212,7 @@
       ],
       "quantitative": {
         "darkmyter": {
+          "fps_used": 25.0,
           "jerk": {
             "mean": 20361.099860314604,
             "std": 12055.261090834929,
@@ -2225,20 +2245,21 @@
           "detection_count": 169715
         },
         "eagle": {
+          "fps_used": 24.0,
           "jerk": {
-            "mean": 20550.08327865055,
-            "std": 4346.0325475112195,
+            "mean": 18181.39847962018,
+            "std": 3845.0914519548874,
             "min": 0.0,
-            "max": 35668.04247082931,
+            "max": 31556.80122347164,
             "count": 44
           },
           "speed": {
-            "speed_violation_rate": 0.01782292065925642,
-            "accel_violation_rate": 0.8057180631300611,
-            "mean_speed_ms": 3.146887079975827,
-            "max_speed_ms": 35.20031960082181,
-            "mean_accel_ms2": 30.041795293059284,
-            "max_accel_ms2": 848.7579900205452,
+            "speed_violation_rate": 0.012595656943471537,
+            "accel_violation_rate": 0.7908643199471161,
+            "mean_speed_ms": 3.0210115967767943,
+            "max_speed_ms": 33.79230681678894,
+            "mean_accel_ms2": 27.686518542083437,
+            "max_accel_ms2": 782.2153636029344,
             "total_speed_samples": 151322,
             "total_accel_samples": 151275
           },
@@ -2257,6 +2278,7 @@
           "detection_count": 160498
         },
         "yolo11_botsort": {
+          "fps_used": 25.0,
           "jerk": {
             "mean": 10558.140972206418,
             "std": 7629.2154190890105,
@@ -2628,6 +2650,7 @@
       ],
       "quantitative": {
         "darkmyter": {
+          "fps_used": 25.0,
           "jerk": {
             "mean": 20169.89961009362,
             "std": 21836.716984601044,
@@ -2660,20 +2683,21 @@
           "detection_count": 352385
         },
         "eagle": {
+          "fps_used": 24.0,
           "jerk": {
-            "mean": 19433.2211687985,
-            "std": 6914.578152023456,
-            "min": 2624.2020841505323,
-            "max": 57922.11368264305,
+            "mean": 17193.270363998112,
+            "std": 6117.576215908624,
+            "min": 2321.7260551230056,
+            "max": 51245.77917112687,
             "count": 183
           },
           "speed": {
-            "speed_violation_rate": 0.006172957355683257,
-            "accel_violation_rate": 0.7544998693843223,
-            "mean_speed_ms": 2.679418569782201,
-            "max_speed_ms": 46.25,
-            "mean_accel_ms2": 27.29471539106062,
-            "max_accel_ms2": 750.0,
+            "speed_violation_rate": 0.0038183241375360356,
+            "accel_violation_rate": 0.743145862668765,
+            "mean_speed_ms": 2.5722418269909135,
+            "max_speed_ms": 44.400000000000006,
+            "mean_accel_ms2": 25.15480970440147,
+            "max_accel_ms2": 691.2000000000002,
             "total_speed_samples": 157137,
             "total_accel_samples": 156949
           },
@@ -2692,6 +2716,7 @@
           "detection_count": 159785
         },
         "yolo11_botsort": {
+          "fps_used": 25.0,
           "jerk": {
             "mean": 6632.014739922113,
             "std": 5960.82541145774,
@@ -3063,6 +3088,7 @@
       ],
       "quantitative": {
         "darkmyter": {
+          "fps_used": 25.0,
           "jerk": {
             "mean": 21167.654075609138,
             "std": 21790.18172573265,
@@ -3095,20 +3121,21 @@
           "detection_count": 360364
         },
         "eagle": {
+          "fps_used": 24.0,
           "jerk": {
-            "mean": 19545.7866711004,
-            "std": 6944.857081106726,
-            "min": 295.3283924551496,
-            "max": 64423.52540027595,
+            "mean": 17292.861116242682,
+            "std": 6144.365074510039,
+            "min": 261.2876606271992,
+            "max": 56997.81216853854,
             "count": 210
           },
           "speed": {
-            "speed_violation_rate": 0.01652131149581987,
-            "accel_violation_rate": 0.7955617889979741,
-            "mean_speed_ms": 3.3810944941856267,
-            "max_speed_ms": 33.77314021526574,
-            "mean_accel_ms2": 28.737271005305978,
-            "max_accel_ms2": 716.1511424631182,
+            "speed_violation_rate": 0.01231317036124028,
+            "accel_violation_rate": 0.780065451145395,
+            "mean_speed_ms": 3.2458507144182014,
+            "max_speed_ms": 32.42221460665511,
+            "mean_accel_ms2": 26.48426895848999,
+            "max_accel_ms2": 660.0048928940098,
             "total_speed_samples": 160641,
             "total_accel_samples": 160425
           },
@@ -3127,6 +3154,7 @@
           "detection_count": 164449
         },
         "yolo11_botsort": {
+          "fps_used": 25.0,
           "jerk": {
             "mean": 7329.767230206144,
             "std": 6821.260639675228,
@@ -3498,6 +3526,7 @@
       ],
       "quantitative": {
         "darkmyter": {
+          "fps_used": 25.0,
           "jerk": {
             "mean": 20115.475885493575,
             "std": 13610.596780529744,
@@ -3530,20 +3559,21 @@
           "detection_count": 174748
         },
         "eagle": {
+          "fps_used": 24.0,
           "jerk": {
-            "mean": 20507.92611130108,
-            "std": 1568.0817113376497,
-            "min": 15651.797212794423,
-            "max": 26530.272379100425,
+            "mean": 18144.10051600807,
+            "std": 1387.338340962027,
+            "min": 13847.708458858891,
+            "max": 23472.287063595795,
             "count": 52
           },
           "speed": {
-            "speed_violation_rate": 0.019855306539236756,
-            "accel_violation_rate": 0.7998731472826812,
-            "mean_speed_ms": 3.199860876575345,
-            "max_speed_ms": 30.23346655611956,
-            "mean_accel_ms2": 29.770942448517346,
-            "max_accel_ms2": 693.336663902989,
+            "speed_violation_rate": 0.014482694181560927,
+            "accel_violation_rate": 0.7837227934303646,
+            "mean_speed_ms": 3.0718664415123316,
+            "max_speed_ms": 29.024127893874777,
+            "mean_accel_ms2": 27.436900560553592,
+            "max_accel_ms2": 638.9790694529947,
             "total_speed_samples": 149834,
             "total_accel_samples": 149780
           },
@@ -3562,6 +3592,7 @@
           "detection_count": 158857
         },
         "yolo11_botsort": {
+          "fps_used": 25.0,
           "jerk": {
             "mean": 10460.931564272285,
             "std": 8348.609537273223,
@@ -3933,6 +3964,7 @@
       ],
       "quantitative": {
         "darkmyter": {
+          "fps_used": 25.0,
           "jerk": {
             "mean": 17996.561177088835,
             "std": 18240.329505772806,
@@ -3965,20 +3997,21 @@
           "detection_count": 359626
         },
         "eagle": {
+          "fps_used": 24.0,
           "jerk": {
-            "mean": 19525.070632996114,
-            "std": 8191.940441277782,
-            "min": 5692.147114416639,
-            "max": 82179.57710162965,
+            "mean": 17274.532891554452,
+            "std": 7247.70461825434,
+            "min": 5036.04746942052,
+            "max": 72707.23032658742,
             "count": 173
           },
           "speed": {
-            "speed_violation_rate": 0.009095333506096212,
-            "accel_violation_rate": 0.7706642031397314,
-            "mean_speed_ms": 2.6005186175848136,
-            "max_speed_ms": 36.27154532136727,
-            "mean_accel_ms2": 27.426962212953082,
-            "max_accel_ms2": 862.5944592100225,
+            "speed_violation_rate": 0.006276348972587588,
+            "accel_violation_rate": 0.7583318041749189,
+            "mean_speed_ms": 2.496497872881421,
+            "max_speed_ms": 34.82068350851258,
+            "mean_accel_ms2": 25.276688375457567,
+            "max_accel_ms2": 794.9670536079569,
             "total_speed_samples": 158213,
             "total_accel_samples": 158039
           },
@@ -3997,6 +4030,7 @@
           "detection_count": 160242
         },
         "yolo11_botsort": {
+          "fps_used": 25.0,
           "jerk": {
             "mean": 6528.162983343131,
             "std": 5884.21351485819,
@@ -4368,6 +4402,7 @@
       ],
       "quantitative": {
         "darkmyter": {
+          "fps_used": 25.0,
           "jerk": {
             "mean": 19928.201352533863,
             "std": 23295.29548316406,
@@ -4400,20 +4435,21 @@
           "detection_count": 351144
         },
         "eagle": {
+          "fps_used": 24.0,
           "jerk": {
-            "mean": 19246.344957807767,
-            "std": 9966.293278737667,
-            "min": 2237.0234228514255,
-            "max": 110723.57445256837,
+            "mean": 17027.934252591014,
+            "std": 8817.538450257249,
+            "min": 1979.1751550398792,
+            "max": 97961.13236686753,
             "count": 164
           },
           "speed": {
-            "speed_violation_rate": 0.008140198726049278,
-            "accel_violation_rate": 0.7679672249049625,
-            "mean_speed_ms": 2.582954248651981,
-            "max_speed_ms": 26.516504294495533,
-            "mean_accel_ms2": 27.236018134052298,
-            "max_accel_ms2": 533.1709611246345,
+            "speed_violation_rate": 0.005381896557254014,
+            "accel_violation_rate": 0.7568709544847426,
+            "mean_speed_ms": 2.479636078705902,
+            "max_speed_ms": 25.455844122715714,
+            "mean_accel_ms2": 25.100714312342607,
+            "max_accel_ms2": 491.3703577724632,
             "total_speed_samples": 155893,
             "total_accel_samples": 155728
           },
@@ -4432,6 +4468,7 @@
           "detection_count": 159474
         },
         "yolo11_botsort": {
+          "fps_used": 25.0,
           "jerk": {
             "mean": 6441.616195889756,
             "std": 5982.6721377091535,
@@ -4803,6 +4840,7 @@
       ],
       "quantitative": {
         "darkmyter": {
+          "fps_used": 25.0,
           "jerk": {
             "mean": 21111.060636481405,
             "std": 17139.032372701386,
@@ -4835,20 +4873,21 @@
           "detection_count": 173189
         },
         "eagle": {
+          "fps_used": 24.0,
           "jerk": {
-            "mean": 19809.374729372204,
-            "std": 3186.5974923653375,
-            "min": 5137.869702330431,
-            "max": 28080.756947825364,
+            "mean": 17526.066960565848,
+            "std": 2819.2975190053394,
+            "min": 4545.658288961017,
+            "max": 24844.056578991225,
             "count": 51
           },
           "speed": {
-            "speed_violation_rate": 0.025357007833279165,
-            "accel_violation_rate": 0.7909564409647347,
-            "mean_speed_ms": 3.0464394485416735,
-            "max_speed_ms": 38.93102875599359,
-            "mean_accel_ms2": 29.325479917115608,
-            "max_accel_ms2": 440.46947217903096,
+            "speed_violation_rate": 0.020190094649359606,
+            "accel_violation_rate": 0.7760143316856318,
+            "mean_speed_ms": 2.9245818706000075,
+            "max_speed_ms": 37.37378760575385,
+            "mean_accel_ms2": 27.026362291613758,
+            "max_accel_ms2": 405.93666556019485,
             "total_speed_samples": 150767,
             "total_accel_samples": 150715
           },
@@ -4867,6 +4906,7 @@
           "detection_count": 159470
         },
         "yolo11_botsort": {
+          "fps_used": 25.0,
           "jerk": {
             "mean": 10128.694177414947,
             "std": 8420.084040452815,
@@ -5238,6 +5278,7 @@
       ],
       "quantitative": {
         "darkmyter": {
+          "fps_used": 25.0,
           "jerk": {
             "mean": 22352.46521309123,
             "std": 16031.101004814274,
@@ -5270,20 +5311,21 @@
           "detection_count": 163782
         },
         "eagle": {
+          "fps_used": 24.0,
           "jerk": {
-            "mean": 20806.68888548056,
-            "std": 2967.5981797099585,
-            "min": 10546.875,
-            "max": 31317.713659215042,
+            "mean": 18408.42669778453,
+            "std": 2625.5409431238695,
+            "min": 9331.2,
+            "max": 27707.90871199928,
             "count": 93
           },
           "speed": {
-            "speed_violation_rate": 0.019665776030905285,
-            "accel_violation_rate": 0.7937908276651626,
-            "mean_speed_ms": 2.9883406807395207,
-            "max_speed_ms": 31.27499000799201,
-            "mean_accel_ms2": 29.59086605742677,
-            "max_accel_ms2": 781.8747501998002,
+            "speed_violation_rate": 0.012922070492586635,
+            "accel_violation_rate": 0.7801737490740117,
+            "mean_speed_ms": 2.86880705350994,
+            "max_speed_ms": 30.02399040767233,
+            "mean_accel_ms2": 27.270942158524516,
+            "max_accel_ms2": 720.5757697841359,
             "total_speed_samples": 148583,
             "total_accel_samples": 148490
           },
@@ -5302,6 +5344,7 @@
           "detection_count": 157595
         },
         "yolo11_botsort": {
+          "fps_used": 25.0,
           "jerk": {
             "mean": 10505.26193332147,
             "std": 8295.958154588836,
@@ -5673,6 +5716,7 @@
       ],
       "quantitative": {
         "darkmyter": {
+          "fps_used": 25.0,
           "jerk": {
             "mean": 27222.469750271204,
             "std": 17895.481327842972,
@@ -5705,20 +5749,21 @@
           "detection_count": 167645
         },
         "eagle": {
+          "fps_used": 24.0,
           "jerk": {
-            "mean": 21410.7465425933,
-            "std": 5902.357397101434,
-            "min": 2403.846153846154,
-            "max": 51804.719286991865,
+            "mean": 18942.85825310783,
+            "std": 5222.028074081934,
+            "min": 2126.769230769231,
+            "max": 45833.500123096026,
             "count": 121
           },
           "speed": {
-            "speed_violation_rate": 0.026185800963452667,
-            "accel_violation_rate": 0.8006922627062167,
-            "mean_speed_ms": 3.505826213111534,
-            "max_speed_ms": 37.520827549509086,
-            "mean_accel_ms2": 32.641190018763346,
-            "max_accel_ms2": 719.3285053816435,
+            "speed_violation_rate": 0.016510507613178512,
+            "accel_violation_rate": 0.7848069416676867,
+            "mean_speed_ms": 3.3655931645870725,
+            "max_speed_ms": 36.019994447528724,
+            "mean_accel_ms2": 30.0821207212923,
+            "max_accel_ms2": 662.9331505597227,
             "total_speed_samples": 147179,
             "total_accel_samples": 147054
           },
@@ -5737,6 +5782,7 @@
           "detection_count": 152799
         },
         "yolo11_botsort": {
+          "fps_used": 25.0,
           "jerk": {
             "mean": 12159.943028221465,
             "std": 9440.888904450634,
@@ -6108,6 +6154,7 @@
       ],
       "quantitative": {
         "darkmyter": {
+          "fps_used": 25.0,
           "jerk": {
             "mean": 26076.594186874372,
             "std": 16161.54637180453,
@@ -6140,20 +6187,21 @@
           "detection_count": 159543
         },
         "eagle": {
+          "fps_used": 24.0,
           "jerk": {
-            "mean": 23402.551689677206,
-            "std": 4727.115745547681,
-            "min": 14726.784883618471,
-            "max": 54021.286900711086,
+            "mean": 20705.079971718253,
+            "std": 4182.249476252873,
+            "min": 13029.31675079307,
+            "max": 47794.57728738752,
             "count": 73
           },
           "speed": {
-            "speed_violation_rate": 0.026515204085881226,
-            "accel_violation_rate": 0.817364437964313,
-            "mean_speed_ms": 3.5469960968121748,
-            "max_speed_ms": 36.784847423905404,
-            "mean_accel_ms2": 32.94476229107484,
-            "max_accel_ms2": 563.450931912706,
+            "speed_violation_rate": 0.01842393793457594,
+            "accel_violation_rate": 0.7997708810664445,
+            "mean_speed_ms": 3.4051162529396874,
+            "max_speed_ms": 35.31345352694919,
+            "mean_accel_ms2": 30.361892927454573,
+            "max_accel_ms2": 519.2763788507499,
             "total_speed_samples": 144106,
             "total_accel_samples": 144030
           },
@@ -6172,6 +6220,7 @@
           "detection_count": 147586
         },
         "yolo11_botsort": {
+          "fps_used": 25.0,
           "jerk": {
             "mean": 12226.921046634443,
             "std": 9895.548414802031,
@@ -6543,6 +6592,7 @@
       ],
       "quantitative": {
         "darkmyter": {
+          "fps_used": 25.0,
           "jerk": {
             "mean": 18077.59428568056,
             "std": 14663.571234500352,
@@ -6575,20 +6625,21 @@
           "detection_count": 172463
         },
         "eagle": {
+          "fps_used": 24.0,
           "jerk": {
-            "mean": 20487.190342499085,
-            "std": 1114.43910809183,
-            "min": 18295.143531169946,
-            "max": 23824.113419829075,
+            "mean": 18125.754834861273,
+            "std": 985.984398736734,
+            "min": 16186.372107193174,
+            "max": 21078.0508106059,
             "count": 36
           },
           "speed": {
-            "speed_violation_rate": 0.02635218654996158,
-            "accel_violation_rate": 0.806782107746493,
-            "mean_speed_ms": 3.2067028269306714,
-            "max_speed_ms": 27.5,
-            "mean_accel_ms2": 30.010660718520068,
-            "max_accel_ms2": 434.60388111215417,
+            "speed_violation_rate": 0.01929642869074266,
+            "accel_violation_rate": 0.7909629817749233,
+            "mean_speed_ms": 3.0784347138534445,
+            "max_speed_ms": 26.400000000000002,
+            "mean_accel_ms2": 27.657824918188098,
+            "max_accel_ms2": 400.53093683296134,
             "total_speed_samples": 149665,
             "total_accel_samples": 149629
           },
@@ -6607,6 +6658,7 @@
           "detection_count": 158049
         },
         "yolo11_botsort": {
+          "fps_used": 25.0,
           "jerk": {
             "mean": 10441.764471897768,
             "std": 8086.924602454639,

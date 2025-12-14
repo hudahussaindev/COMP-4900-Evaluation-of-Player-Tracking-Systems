@@ -1,6 +1,6 @@
 PLAYER TRACKING SYSTEM COMPARISON REPORT
 
-Generated: 2025-12-14 02:03:53
+Generated: 2025-12-14 05:02:10
 Clips Analyzed: 15
 Systems: darkmyter, eagle, yolo11_botsort
 
@@ -28,7 +28,7 @@ METRIC DEFINITIONS:
 
 --- EAGLE ---
   Frames: 114,375 | Detections: 2,357,054 | Tracks: 1,911
-  Jerk: 20903 | Speed: 11.8 km/h | Violations: 2.5%
+  Jerk: 18494 | Speed: 11.3 km/h | Violations: 1.8%
   Players/Frame: 19.9 | Coverage: 63.0%
   Track Length: 1562 frames | Fragmentation: 57.6%
 
@@ -44,8 +44,8 @@ INTER-SYSTEM AGREEMENT:
   eagle vs yolo11_botsort: IoU=0.734, Distance=3.04px, Disagreement=59.5%
 
 OVERALL RANKING:
-  1. EAGLE (Score: 0.647)
-  2. DARKMYTER (Score: 0.424)
+  1. EAGLE (Score: 0.682)
+  2. DARKMYTER (Score: 0.355)
   3. YOLO11_BOTSORT (Score: 0.300)
 
 RECOMMENDATIONS:
