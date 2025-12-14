@@ -76,7 +76,7 @@ The notebook is organized into 17 cells covering the complete evaluation pipelin
 
 **Cell 7: Darkmyter Setup**
 - Clones original ByteTrack repository (ifzhang/ByteTrack)
-- Downloads football-specific YOLOv8-L weights from Roboflow football-players-detection dataset
+- Downloads football-specific YOLOv8-L weights
 - Creates wrapper script with ByteTrack parameters:
   - `track_thresh`: 0.25
   - `track_buffer`: 30
@@ -97,7 +97,8 @@ The notebook is organized into 17 cells covering the complete evaluation pipelin
   - `match_thresh`: 0.227
   - `proximity_thresh`: 0.595
   - `appearance_thresh`: 0.482
-  - `with_reid`: True
+  - `frame_rate`: 30 (note: may differ from actual video fps)
+- Additionally enabled: `with_reid`: True (not part of original TrackLab config)
 
 **Cell 10: Eagle Setup**
 - Creates wrapper for Eagle tracking system
@@ -237,7 +238,7 @@ output/
 
 | Metric | Description | Ideal Value |
 |--------|-------------|-------------|
-| `jerk_mean` | Mean trajectory jerk (smoothness) | Lower is better |
+| `jerk_mean` | Mean trajectory jerk (smoothness) | Lower is better* |
 | `speed_mean_ms` | Average speed in m/s | 2-4 m/s typical |
 | `speed_violation_rate` | Fraction >40 km/h | <5% |
 | `accel_violation_rate` | Fraction >5 m/s^2 | <50% |
@@ -245,6 +246,8 @@ output/
 | `coverage_rate` | Frames with 20-22 players | Higher is better |
 | `mean_track_length` | Average track duration (frames) | Higher is better |
 | `fragmentation_rate` | Short tracks (<clip duration) | Lower is better |
+
+*Note: Very low jerk scores combined with high fragmentation may indicate tracks are too short to accumulate jerk, rather than genuinely smooth trajectories.
 
 ### Agreement Metrics
 
@@ -260,7 +263,7 @@ output/
 ### Evaluation Parameters
 
 ```python
-fps = 30.0              # Video frame rate (Darkmyter, YOLO11); Eagle uses 24 fps
+fps = 25.0              # Video frame rate (Darkmyter, YOLO11); Eagle uses 24 fps
 pixels_per_meter = 10.0 # Scale factor for speed calculations
 max_speed_ms = 11.11    # 40 km/h threshold
 max_accel_ms2 = 5.0     # Acceleration threshold
@@ -278,7 +281,8 @@ iou_threshold = 0.3     # Minimum IoU for matching
 - `track_high_thresh`: 0.338
 - `track_buffer`: 60 frames
 - `match_thresh`: 0.227
-- `with_reid`: True
+- `frame_rate`: 30 (note: TrackLab default; may mismatch actual video fps of 25)
+- `with_reid`: True (added separately, not part of original TrackLab config)
 
 ## Requirements
 
@@ -295,18 +299,20 @@ iou_threshold = 0.3     # Minimum IoU for matching
 
 ## Typical Results Summary
 
-Based on evaluation across 15 video clips (~85 minutes of footage):
+Based on evaluation across 15 video clips (~75 minutes of footage):
 
 | System | Players/Frame | Track Length | Fragmentation | Jerk Score |
 |--------|---------------|--------------|---------------|------------|
-| Darkmyter | 20.9 | 287 frames | 91.6% | 37,189 |
-| Eagle | 19.9 | 1,562 frames | 57.6% | 36,120 |
-| YOLO11+BoT-SORT | 17.7 | 22 frames | 99.9% | 15,510 |
+| Darkmyter | 20.9 | 287 frames | 91.6% | 21,521 |
+| Eagle | 19.9 | 1,562 frames | 57.6% | 20,903 |
+| YOLO11+BoT-SORT | 17.7 | 22 frames | 99.9% | 8,976* |
+
+*YOLO11's low jerk score is an artifact of extreme track fragmentation (tracks terminate before jerk can accumulate), not genuine trajectory smoothness.
 
 **Key Findings**:
-- Darkmyter achieves best detection completeness (~21 players/frame)
-- Eagle provides best track continuity (longest tracks, lowest fragmentation)
-- YOLO11 has smoothest trajectories but highest fragmentation
+- **Darkmyter** achieves best detection completeness (~21 players/frame)
+- **Eagle** provides best track continuity (longest tracks, lowest fragmentation)
+- **YOLO11+BoT-SORT** exhibits extreme fragmentation (99.9%), rendering the tracker effectively non-functional in its current configuration
 
 ## Troubleshooting
 
